@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -33,9 +33,21 @@
             @endif
 
             <!-- Page Content -->
-           
+           <style>
+                .contenedor{
+                    max-width: 1200px;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                .bg-principal{
+                    background-color: #2a3275;
+                }
+           </style>
+
             <main>
-                {{ $slot }}
+                <div class="">
+                    {{ $slot }}
+                </div>
             </main>
         </div>
 
