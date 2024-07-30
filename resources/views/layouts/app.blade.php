@@ -53,7 +53,9 @@
                 </div>
             </main>
         </div>
-
+        <footer class="text-center py-8">
+            @FitoMolinaLocales {{ date('Y') }} - Todos los derechos zurdos
+        </footer>
         @stack('modals')
 
         @livewireScripts
