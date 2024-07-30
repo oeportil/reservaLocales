@@ -42,6 +42,9 @@
                 .bg-principal{
                     background-color: #2a3275;
                 }
+                /* main{
+                    background-color: #232323;
+                } */
            </style>
 
             <main>
