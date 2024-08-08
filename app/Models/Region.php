@@ -11,6 +11,8 @@ class Region extends Model
 
     protected $table = 'regiones';
 
+    protected $primaryKey = 'idRegion';
+
     protected $fillable = [
         'departamento',
         'nombre',
