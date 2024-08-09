@@ -18,13 +18,32 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <p class="text-center  text-lg font-bold"> Num baños: <span class="font-normal">{{ $local->amenidad->noBaños }}</span> </p>
-                <p class="text-center  text-lg font-bold"> Capicidad max: <span class="font-normal">{{ $local->amenidad->capacidadMax }}</span></p>
-                <p class="text-center  text-lg font-bold"> Num mesas: <span class="font-normal">{{ $local->amenidad->noMesas }}</span></p>
-                <p class="text-center  text-lg font-bold"> Num sillas: <span class="font-normal">{{ $local->amenidad->noSillas }}</span></p>
-                <p class="text-center  text-lg font-bold"> Num parqueos: <span class="font-normal">{{ $local->amenidad->noParques }}</span></p>
-                <p class="text-center  text-lg font-bold"> Otras amenidades: <span class="font-normal">{{ $local->amenidad->otrasAmen }}</span></p>
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-5">
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-bath w-5 h-5 inline-block text-blue-500"></i>
+                    Num baños: <span class="font-normal">{{ $local->amenidad->noBaños }}</span>
+                </p>
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-users w-5 h-5 inline-block text-blue-500"></i>
+                    Capacidad max: <span class="font-normal">{{ $local->amenidad->capacidadMax }}</span>
+                </p>
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-cube w-5 h-5 inline-block text-blue-500"></i>
+                    Num mesas: <span class="font-normal">{{ $local->amenidad->noMesas }}</span>
+                </p>
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-chair w-5 h-5 inline-block text-blue-500"></i>
+                    Num sillas: <span class="font-normal">{{ $local->amenidad->noSillas }}</span>
+                </p>
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-parking w-5 h-5 inline-block text-blue-500"></i>
+                    Num parqueos: <span class="font-normal">{{ $local->amenidad->noParques }}</span>
+                </p>
+                <p class="text-center text-lg font-bold">
+                    <i class="fas fa-star w-5 h-5 inline-block text-yellow-500"></i>
+                    Otras amenidades: <span class="font-normal">{{ $local->amenidad->otrasAmen }}</span>
+                </p>
+
             </div>
 
         </section>
@@ -53,4 +72,8 @@
             <p class="text-center mt-4 text-lg"> Referencia: {{ $local->referencias }}</p>
         </section>
     </main>
+    <div class="text-center ">
+        <button class="w-1/2 border rounded-md bg-principal text-white font-bold text-lg p-3 mb-5 ">Reservar</button>
+    </div>
+
 </x-app-layout>
