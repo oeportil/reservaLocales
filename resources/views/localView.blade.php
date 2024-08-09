@@ -19,12 +19,12 @@
                 </tbody>
             </table>
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <p class="text-center  text-lg"> Num baños: <span>{{ $local->amenidad->noBaños }}</span> </p>
-                <p class="text-center  text-lg"> Capicidad max: <span>{{ $local->amenidad->capacidadMax }}</span></p>
-                <p class="text-center  text-lg"> Num mesas: <span>{{ $local->amenidad->noMesas }}</span></p>
-                <p class="text-center  text-lg"> Num sillas: <span>{{ $local->amenidad->noSillas }}</span></p>
-                <p class="text-center  text-lg"> Num parques: <span>{{ $local->amenidad->noParques }}</span></p>
-                <p class="text-center  text-lg font-bold"> Otras amenidades: <span>{{ $local->amenidad->otrasAmen }}</span></p>
+                <p class="text-center  text-lg font-bold"> Num baños: <span class="font-normal">{{ $local->amenidad->noBaños }}</span> </p>
+                <p class="text-center  text-lg font-bold"> Capicidad max: <span class="font-normal">{{ $local->amenidad->capacidadMax }}</span></p>
+                <p class="text-center  text-lg font-bold"> Num mesas: <span class="font-normal">{{ $local->amenidad->noMesas }}</span></p>
+                <p class="text-center  text-lg font-bold"> Num sillas: <span class="font-normal">{{ $local->amenidad->noSillas }}</span></p>
+                <p class="text-center  text-lg font-bold"> Num parqueos: <span class="font-normal">{{ $local->amenidad->noParques }}</span></p>
+                <p class="text-center  text-lg font-bold"> Otras amenidades: <span class="font-normal">{{ $local->amenidad->otrasAmen }}</span></p>
             </div>
 
         </section>
@@ -51,10 +51,6 @@
 
             <p class="text-center mt-4 text-lg"> Dirección: {{ $local->direccion }}</p>
             <p class="text-center mt-4 text-lg"> Referencia: {{ $local->referencias }}</p>
-
-
-
-
         </section>
     </main>
 </x-app-layout>
