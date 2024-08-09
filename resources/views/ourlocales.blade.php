@@ -11,7 +11,7 @@
                         <strong>Dirección:</strong> {{ $local->direccion }}<br>
                         <strong>Descripción:</strong> {{ $local->descripcion }}
                     </p>
-                    <a href="{{ route('vistalocal') }}" class="bg-stone-700 hover:bg-stone-900 text-white font-bold p-2 ">Ver Local</a>
+                    <a href="{{ route('ourlocales.show', $local->idLocal) }}" class="bg-stone-700 hover:bg-stone-900 text-white font-bold p-2 ">Ver Local</a>
                 </div>
             </div>
         @endforeach

@@ -13,7 +13,7 @@ Route::get('aboutus', function(){
 })->name('aboutus');
 
 Route::get('ourlocales', [LocalController::class, 'index'])->name('ourlocales');
-Route::get('vistalocal', [LocalController::class, 'localView'])->name('vistalocal');
+Route::get('ourlocales/{id}', [LocalController::class, 'localView'])->name('ourlocales.show');
 
 Route::middleware([
     'auth:sanctum',

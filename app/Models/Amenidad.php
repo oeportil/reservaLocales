@@ -11,6 +11,8 @@ class Amenidad extends Model
 
     protected $table = 'amenidades';
 
+    protected $primaryKey = 'idAmenidad';
+
     protected $fillable = [
         'anchoMetros',
         'largoMetros',

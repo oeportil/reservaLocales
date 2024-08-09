@@ -12,8 +12,8 @@ class LocalController extends Controller
         //la vista es ourlocales y con compact pasa la variable a la vista
         return view('ourlocales', compact('locales'));
     }
-    public function localView(){
-        
-        return view('localView');
+    public function localView($idLocal){
+        $local = Local::with('amenidad')->findOrFail($idLocal);
+        return view('localView', compact('local'));
     }
 }

@@ -11,6 +11,8 @@ class Local extends Model
 
     protected $table = 'locales';
 
+    protected $primaryKey = 'idLocal';
+
     protected $fillable = [
         'idRegion',
         'idAmenidad',
