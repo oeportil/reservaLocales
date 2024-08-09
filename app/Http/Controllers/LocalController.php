@@ -8,6 +8,7 @@ class LocalController extends Controller
 {
     public function index(){
         $locales = Local::with('region')->get();
+        
         return view('ourlocales', compact('locales'));
     }
 }
