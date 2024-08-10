@@ -1,8 +1,10 @@
 <x-app-layout>
+<h3 class="text-center mt-4 uppercase font-bold" style="font-size: 2rem;"> {{ $local->nombre }}</h3>
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-4 contenedor py-4">
 
-    <main class="grid grid-cols-1 md:grid-cols-2">
         <section>
-            <img class="w-full h-2/4" src="/images/logo.png" alt="Imagen de propiedad">
+            <img class="w-full h-2/4" src="{{$local->imagenes[0]->url}}" alt="Imagen de propiedad">
+
             <h2 class="text-2xl font-bold text-center mb-3 mt-3">Otros datos</h2>
             <table class="border border-slate-700 rounded-sm w-full  text-left shadow-md">
                 <thead class="bg-principal text-white text-center">
@@ -48,7 +50,7 @@
 
         </section>
         <section>
-            <h3 class="text-center mt-4 uppercase font-bold" style="font-size: 2rem;"> {{ $local->nombre }}</h3>
+           <br>
             <p class="mt-4 text-lg"> {{ $local->descripcion }}</p>
 
             <table class="border border-slate-700 rounded-sm w-full  text-left shadow-md">
@@ -72,8 +74,9 @@
             <p class="text-center mt-4 text-lg"> Referencia: {{ $local->referencias }}</p>
         </section>
     </main>
-    <div class="text-center ">
-        <button class="w-1/2 border rounded-md bg-principal text-white font-bold text-lg p-3 mb-5 ">Reservar</button>
-    </div>
-
+   @auth
+        <div class="text-center ">
+            <a href=# class="w-1/2 border rounded-md bg-principal text-white font-bold text-lg p-3 mb-5">Reservar</a>
+        </div>
+    @endif
 </x-app-layout>

@@ -3,6 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 contenedor">
         @foreach($locales as $local)
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img class="w-full h-2/4" src="{{$local->imagenes[0]->url}}" alt="Imagen de propiedad">
                 <div class="p-4">
                     <h5 class="text-xl font-semibold mb-2">{{ $local->nombre }}</h5>
                     <p class="text-gray-700 mb-5">

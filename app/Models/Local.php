@@ -39,4 +39,9 @@ class Local extends Model
     {
         return $this->hasMany(Reserva::class, 'idLocal');
     }
+
+    public function imagenes()
+    {
+        return $this->hasMany(Imagen::class, 'idLocal');
+    }
 }
