@@ -82,7 +82,9 @@
         <form id="reservaForm" action="{{ route('local.store') }}" method="POST" class="py-5">
             @csrf
             <input type="hidden" name="local_id" value="{{$local->idLocal}}">
-            <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+            @auth
+                <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+            @endauth
             <input type="hidden" name="total" id="totalInput">
             <input type="hidden" name="cancelada" value="0">
             
