@@ -9,6 +9,8 @@ class Reserva extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'idReserva';
+
     protected $fillable = [
         'idLocal',
         'idUser',
