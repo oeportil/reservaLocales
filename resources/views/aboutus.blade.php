@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="text-center flex flex-col justify-center items-center contenedor ">
         <div class="z-10">
-            <h1 class="text-black my-7" style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">FITO MOLINA LOCALES</h1>
+            <h1 class=" my-7" style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">FITO MOLINA LOCALES</h1>
         </div>
        <div class="flex flex-col items-center justify-center">
             <div class="md:flex gap-4 justify-between items-center">
@@ -15,7 +15,7 @@
                 <img style="max-width: 500px; width: 90%;" src="https://media-public.canva.com/pANQk/MADyRWpANQk/1/s2.jpg" alt="">           
             </div>
             <div class="z-10">
-                <h1 class="text-black my-7" style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">Nuestra historia</h1>
+                <h1 class=" my-7" style="font-size: 2.5rem; font-weight: bold; text-transform: uppercase;">Nuestra historia</h1>
             </div>
             <div class="md:flex gap-4 justify-between items-center">
                 <img style="max-width: 500px; width: 90%;" src="https://media-public.canva.com/OlY_U/MADyRtOlY_U/1/s2.jpg" alt="">    
@@ -38,8 +38,8 @@
                         Etiam dolor lectus, sodales convallis ultrices eget, ultricies vitae felis.</p>
                 </div>
                 <div class="bg-white p-4 md:rounded-e-xl shadow-2xl ">
-                    <h3 class="text-3xl mb-4">Visión</h3>
-                    <p>Maecenas ornare lacus turpis. 
+                    <h3 class="text-3xl mb-4 dark:text-secondary-negro">Visión</h3>
+                    <p class="dark:text-secondary-negro">Maecenas ornare lacus turpis. 
                         Integer eu neque sit amet felis venenatis ullamcorper. 
                         Nunc est dui, rhoncus rutrum dictum a, volutpat quis lacus. Integer quis urna egestas, tristique nulla vitae, viverra nisi.
                         Etiam dolor lectus, sodales convallis ultrices eget, ultricies vitae felis.

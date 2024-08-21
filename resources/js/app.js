@@ -1,13 +1,21 @@
-import './bootstrap';
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleSwitch = document.getElementById('dark-mode-toggle');
 
-const botonReservar = document.getElementById("reservar");
-const reservacionContenedor = document.getElementById("reservacionContenedor");
-reservacionContenedor.classList.add("hidden");
-botonReservar.addEventListener('click', () =>{
-    reservacionContenedor.classList.toggle("hidden");
-    if(botonReservar.innerHTML == "Reservar"){
-        botonReservar.innerHTML = "No Reservar";
-    }else {
-        botonReservar.innerHTML = "Reservar";
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        toggleSwitch.checked = true;
+    } else {
+        document.documentElement.classList.remove('dark');
     }
-})
+
+    toggleSwitch.addEventListener('change', function () {
+        if (toggleSwitch.checked) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});

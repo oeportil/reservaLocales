@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h1 class="text-2xl font-bold text-center my-4">Mis Reservaciones</h1>
+    <h1 class="text-2xl font-bold text-center py-4">Mis Reservaciones</h1>
 
     @if(session('success'))
         <div class="bg-green-500 text-white font-bold text-center py-2 px-4 rounded-md my-4">
@@ -15,7 +15,7 @@
 
     <div class="container mx-auto">
         @forelse($reservas as $reserva)
-            <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+            <div class="bg-white shadow-md rounded-lg p-4 my-2 dark:bg-secondary-dark">
                 <h2 class="text-xl font-bold">{{ $reserva->local->nombre }}</h2>
                 <p><strong>Fecha de Inicio:</strong> {{ $reserva->fechaInicio }}</p>
                 <p><strong>Fecha de Fin:</strong> {{ $reserva->fechaFin }}</p>

@@ -21,7 +21,7 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased dark:bg-primary-dark">
     <x-banner />
 
     <div class="min-h-screen bg-gray-100">
@@ -54,12 +54,14 @@
         </style>
 
         <main>
-            <div class="">
+            <div class="dark:bg-primary-dark dark:text-secondary-light">
                 {{ $slot }}
             </div>
         </main>
     </div>
-    <footer class="text-center py-8">
+    <!-- ejecutar el servidor de node para que no de error esta linea de codigo -->
+    <script src="{{ mix('js/app.js') }}"></script>
+    <footer class="text-center py-8 dark:bg-secondary-dark">
         @FitoMolinaLocales {{ date('Y') }} - Todos los derechos zurdos
     </footer>
     @stack('modals')

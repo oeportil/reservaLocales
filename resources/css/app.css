@@ -5,3 +5,23 @@
 [x-cloak] {
     display: none;
 }
+
+/* Modo Claro (Predeterminado) */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: black !important;
+    color: white;
+}
+
+/* Otros estilos para elementos específicos en modo oscuro */
+.dark-mode .navbar {
+    background-color: #333;
+    color: white;
+}
+
+/* Añadir más estilos aquí */
